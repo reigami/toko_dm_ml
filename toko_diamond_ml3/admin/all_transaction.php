@@ -331,7 +331,6 @@ select#status:focus {
                     <th>Server</th>
                     <th>Total</th>
                     <th>Status</th>
-                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -350,11 +349,6 @@ select#status:focus {
                                 <span class="status-badge <?= $row['status']; ?>">
                                     <?= ucfirst($row['status']); ?>
                                 </span>
-                            </td>
-                            <td>
-                                <a href="transactions.php?detail=<?= $row['id_transaksi']; ?>" class="btn-action btn-view">
-                                    <i class="fas fa-eye"></i> Detail
-                                </a>
                             </td>
                         </tr>
                     <?php endwhile; ?>
