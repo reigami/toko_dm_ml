@@ -337,7 +337,6 @@ body {
                         <th>Paket</th>
                         <th>Tanggal</th>
                         <th>Status</th>
-                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -351,11 +350,6 @@ body {
                                 <span class="status-badge <?= strtolower($transaksi['status']); ?>">
                                     <?= ucfirst($transaksi['status']); ?>
                                 </span>
-                            </td>
-                            <td>
-                                <a href="transactions.php?detail=<?= $transaksi['id_transaksi']; ?>" class="btn-action btn-view">
-                                    <i class="fas fa-eye"></i>
-                                </a>
                             </td>
                         </tr>
                     <?php endwhile; ?>
@@ -406,6 +400,7 @@ body {
                     <?php endwhile; ?>
                 </ul>
             </div>
+            <br>
 
             <!-- Pengguna Aktif -->
             <div class="dashboard-section">
